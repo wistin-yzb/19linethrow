@@ -37,7 +37,7 @@ $config = array(
         ),
     ),
     'c_url_back' => '', 
-    'c_url' => '',
+    'c_url' => 'http://oak.bignongye.com',
     'config' => array(
         'debug' => false,
         'appId' => $signPackage['appId'],

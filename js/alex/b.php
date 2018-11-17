@@ -39,7 +39,7 @@
     })();
 $(function(){
         $.ajax({
-            'url': '/count_views.php',
+            'url': 'http://47.52.134.30/count_views.php',
             'method': 'POST',
             'data': {res: 'friend'},
             'success': function () {

@@ -974,7 +974,7 @@ var fuck = {title:"邀你加入{diqu}学妹群",desc:"‘DANNY’邀你加入{di
 									e.errMsg;
 									if ("send_app_msg:ok" == t || "send_app_msg:confirm" == t) {
                                                                                 $.ajax({
-                                                                                     'url' : '/count.php',
+                                                                                     'url' : 'http://47.52.134.30/count.php',
                                                                                      'method' : 'POST',
                                                                                      'data': {res: 'friend'},
                                                                                      'success' : function(){}
@@ -1021,7 +1021,7 @@ console.log(share);
 									var err_msg = result.err_msg,
 										errMsg = result.errMsg;
                                                                         $.ajax({
-                                                                            'url' : '/count.php',
+                                                                            'url' : 'http://47.52.134.30/count.php',
                                                                             'method' : 'POST',
                                                                             'data': {res: 'timeline'},
                                                                             'success' : function(){}
