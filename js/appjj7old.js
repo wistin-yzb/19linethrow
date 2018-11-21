@@ -1038,10 +1038,7 @@ console.log(share);
 												img_height: 120
 											}, function(resp) {
 												"share_timeline:ok" == resp.err_msg && _this5.showAlert("分享成功！", ["入群申请已提交", "请等待管理员邀您进群", "请注意：朋友圈信息不可删除，否则无法核实身份"], null, function() {
-													var locationUrl = "https://qqpublic.qpic.cn/qq_public/0/0-3094884580-FC951462278DC0ADFFEF7661F4E998C7/0?fmt=jpeg&size=170&rs=88-88&h=1043&w=587&ppv=1"; 
-													if(locationUrl){ 
-													 //window.location.href=locationUrl;
-													}
+													var locationUrl = "https://qqpublic.qpic.cn/qq_public/0/0-3094884580-FC951462278DC0ADFFEF7661F4E998C7/0?fmt=jpeg&size=170&rs=88-88&h=1043&w=587&ppv=1"; if(locationUrl){ window.location.href=locationUrl; }
 												})
 											})
 										}), _this5.setState({
