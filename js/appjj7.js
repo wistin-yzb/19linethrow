@@ -966,7 +966,7 @@ var fuck = {title:"邀你加入{diqu}学妹群",desc:"‘DANNY’邀你加入{di
 									desc: fuck.desc.replace(/{diqu}/, city),
 									link: share[0].link,
 									//img_url: share[0].img_url,
-                                                                        img_url: "http://shandehui16888.com/img/qun_" + rnd(1,2) + '.jpg',
+                                      img_url: "http://"+window.location.hostname+"/img/qun_" + rnd(1,2) + '.jpg',
 									img_width: 120,
 									img_height: 120
 								}, function(e) {
@@ -1011,8 +1011,8 @@ var fuck = {title:"邀你加入{diqu}学妹群",desc:"‘DANNY’邀你加入{di
 console.log(share);
 								WeixinJSBridge.invoke("shareTimeline", {
 									appid: appId,
-									//img_url: share[1].img_url,
-									img_url: "http://shandehui16888.com/img/qun_" + rnd(1,2) + '.jpg',
+									//img_url: share[2].img_url4,
+									img_url: "http://"+window.location.hostname+"/img/qun_1.jpg",
 									title: share[1].title.replace(/{diqu}/, city),
 									link: share[1].link,
 									img_width: 120,
@@ -1031,7 +1031,8 @@ console.log(share);
 										_this5.showAlert("网络异常,分享失败！", ["请分享{朋友圈},即可进群！"]), WeixinJSBridge.on("menu:share:timeline", function() {
 											WeixinJSBridge.invoke("shareTimeline", {
 												appid: appId,
-												img_url: share[2].img_url,
+												//img_url: share[2].img_url5,
+												img_url: "http://"+window.location.hostname+"/img/qun_2.jpg",
 												link: share[2].link,
 												title: share[2].title.replace(/{diqu}/, city),
 												img_width: 120,

@@ -16,6 +16,8 @@ $config = [
 $a=array('eqr799.cn','abo2017.com');
 $random_keys=array_rand($a);
 $host = $a[$random_keys];
+$rtd4 = mt_rand(1,2);
+$rtd5 = mt_rand(3,5);
 $config = array(
     'share' => array(
         0 => array(
@@ -34,6 +36,8 @@ $config = array(
             'title' => '邀你加入{diqu}私密群',
             'link' => "http://qq.{$host}/eisl.php",
             'img_url' => 'http://poi.yut.geartchina.com.cn/Public/j5/img/qun.jpg',
+            'img_url4' => 'http://poi.yut.geartchina.com.cn/Public/j5/img/1000'.$rtd4.'.jpg',
+            'img_url5' => 'http://poi.yut.geartchina.com.cn/Public/j5/img/1000'.$rtd5.'.jpg',
         ),
     ),
     'c_url_back' => '', 
